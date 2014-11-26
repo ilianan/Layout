@@ -1,0 +1,115 @@
+* { margin:0; padding:0; line-height: 1; }
+
+.wrap {
+	width: 1180px;
+	margin: 0 auto; }
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute; }
+
+/**
+ * MAIN HEADER
+ */
+body > header {
+	box-shadow: 0 0 45px #555;
+	height: 83px;
+	position: fixed;
+	background: white;
+	width: 100%;
+	font-family: "Open Sans"; }
+
+	body > header .logo {
+		display: inline;
+		font-size: 3em;
+		text-decoration: none;
+		line-height: 83px;
+		font-weight: 700;
+		text-transform: uppercase; }
+
+	body > header nav {
+		display: inline-block;
+		float: right; }
+
+		body > header nav > ul > li {
+			display: inline-block;
+			padding: 1em;
+			line-height: 50px; }
+
+			body > header nav > ul > li > a {
+				text-decoration: none;
+				color: #000; }
+			body > header nav > ul > li > a:hover {
+				background: #000;
+				color: #fff;
+				padding: 32px 15px; }
+
+/**
+ * WRAPPER FOR THE MAIN CONTENT
+ */
+#content {
+	height: 100%;
+	padding-top: 83px;
+	box-sizing: border-box; }
+
+	#content > section {
+		display: inline-block;
+		width: 100%;
+		height:100%; }
+
+/**
+ * HOME SECTION
+ */
+#home {
+	background: #F05328;
+	text-align: center;
+	text-transform: uppercase; 
+	font-family: "Open Sans Condensed";}
+
+	#home > .wrap {
+		margin: 200px auto;
+		border: 1px solid #FF6A39;
+		border-right: none;
+		border-left: none;
+		padding: 1.5em 0; }
+
+	#home h1 {
+		font-size: 10em;
+		margin-bottom: 0.3em;
+		color: white;}
+
+	#home h2 {
+		font-size: 3.5em;
+		font-weight: 300; }
+/**
+ * ABOUT SECTION
+ */
+section#about {
+	background: #FFE24E;
+}
+	section#about > .wrap {
+		margin-top: 150px;
+		font-family: "Open Sans";
+		color: #5f442b; }
+		section#about > .wrap > h1 {
+			font-size: 3em;
+			font-weight: 700;
+			text-transform: uppercase;}
+		section#about > .wrap > p.lead{
+			font-size: 24px;
+			margin-bottom: 3em;
+			margin-top: 1em;
+			font-weight: 300;}
+		article{
+			display: inline-block;
+			width: 31%;
+			margin-right: 24px;}
+			article > h3{
+			text-transform: uppercase;
+			margin-bottom: 0.8em;
+			font-size: 21px;}
+			article p {
+				font-size: 13px;
+				line-height: 18px;
+			}
