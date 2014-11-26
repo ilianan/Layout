@@ -1,0 +1,38 @@
+* { margin:0; padding:0; line-height: 1; }
+
+.wrap {
+	width: 960px;
+	margin: 0 auto; }
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute; }
+
+/**
+ * MAIN HEADER
+ */
+body > header {
+	box-shadow: 0 0 45px #555;
+	height: 83px;
+	position: fixed;
+	background: white;
+	width: 100%; }
+
+	body > header .logo {
+		display: inline;
+		font-size: 2em;
+		text-decoration: none;
+		line-height: 83px; }
+
+	body > header nav {
+		display: inline-block;
+		float: right; }
+
+		body > header nav > ul > li {
+			display: inline-block;
+			padding: 1em;
+			line-height: 43px; }
+
+			body > header nav > ul > li > a {
+				text-decoration: none; }
