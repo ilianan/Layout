@@ -1,7 +1,7 @@
 * { margin:0; padding:0; line-height: 1; }
 
 .wrap {
-	width: 1180px;
+	width: 1280px;
 	margin: 0 auto; }
 
 body {
@@ -124,16 +124,23 @@ section#about {
 			font-weight: 600;
 			font-size: 2em;}
 			.team {
-				margin-top: 100px;
-				
-				background: #E5CB46;
-				padding: 20px;
-				width: 22%;
-				box-sizing: border-box;}
+				margin-top: 100px;}
 				.team > article {
 					text-align: center;
-					width: 100%;
-					display: inline-block;}
+					padding: 20px;
+					width: 19%;
+					display: inline-block;
+					background: #E5CB46;}
 			header > img {
 				width: 100%;
 				height: 100%;}
+			article > h3 {
+				margin: 1em 0 1.5em 0;
+				font-weight: 400;}
+			article > span.profession{
+				padding: 10px;
+				display: block;
+				background: #CBB43E;
+				text-align: center;
+				margin: 20px 0; 
+				font-size: 14px;}		
