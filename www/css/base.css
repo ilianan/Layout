@@ -153,9 +153,9 @@ section#about {
 /**
  * SERVICES
 */
-#services {
+section#services {
 	background: mediumaquamarine;
-	height: 1500px;}
+	height: 1200px;}
 
 	#services > .wrap {
 		margin-top: 150px;
@@ -209,6 +209,32 @@ section#about {
             	margin-bottom: 10px;
             	font-size: 24px;}
 
+    	#services > .wrap > .title > h3 {
+    		text-align: center;
+    		text-transform: uppercase;
+    		font-size: 24px;
+    		width: 1200px;
+    		margin: 500px 0 50px 0}
+		
+		#services .opinion {
+			display: inline-block;
+	        float: left;
+	        overflow:hidden;
+	        margin-right: 4%;}
+	    #services .opinion:nth-of-type(even) {
+       	 	margin-right: 0; }
+        #services > .wrap > .opinion >  img {
+			border-radius: 100%;
+			border: 2px solid #fff;
+			width: 100px;
+			height: 100px;
+			box-sizing: border-box;} 		
+		#services .opinion > .right {
+			display: inline-block;
+			margin-left: 2em;
+			margin-bottom: 2em;
+			width: 400px;} 
+		
 /**
  * PORTFOLIO
 */
