@@ -153,7 +153,7 @@ section#about {
 */
 section#services {
 	background: mediumaquamarine;
-	height: 1500px;}
+	height: 1000px;}
 	section#services > .wrap {
 		margin-top: 150px;
 		font-family: "Open Sans";
@@ -168,8 +168,9 @@ section#services {
 			margin-top: 1em;
 			font-weight: 300;}
 	article.info{
-		display: inline-block;
-		width: 49%;}
+		display: block;
+		width: 45%;
+		float: left;}
 
 		article.info > .fa {
 			box-shadow: 0px 0px 0px 6px #363f48;
@@ -182,3 +183,22 @@ section#services {
 			text-align: center;
 			line-height: 80px;
 			padding: 10px;}
+/**
+ * PORTFOLIO
+*/
+section#portfolio {
+	background: #eee;
+	height: 1000px;}
+	section#portfolio > .wrap {
+		margin-top: 150px;
+		font-family: "Open Sans";
+		color: #000; }
+		section#portfolio > .wrap > h1 {
+			font-size: 3em;
+			font-weight: 700;
+			text-transform: uppercase;}
+		section#portfolio > .wrap > p.lead{
+			font-size: 24px;
+			margin-bottom: 3em;
+			margin-top: 1em;
+			font-weight: 300;}
