@@ -8,8 +8,20 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	  function initialize() {
+	    var mapCanvas = document.getElementById('map-canvas');
+	    var mapOptions = {
+	      center: new google.maps.LatLng(-34.894253, -56.166735),
+	      zoom: 15,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP
+	    }
+	    var map = new google.maps.Map(mapCanvas, mapOptions);
+	  }
+	   google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 </head>
 <body>
 	<header>
@@ -112,7 +124,7 @@
 		<section id="services">
 			<div class="wrap">
 				<h1>Services</h1>
-				<p class="lead"> We are Versi and we built our company with 15 years of experience.</p>
+				<p class="lead">Helping you lead with Outstanding Technology.</p>
 				<article class="info">
 					<i class="fa fa-tablet fa-3x"></i>
                     <div class="right">
@@ -141,24 +153,101 @@
                         <p>Vestibulum mollis eros quis turpis pulvinar tincidunt. Suspendisse potenti. Cum sociis natoque pernatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum dapibus lectus a ligula blandit ac egestas ipsum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                     </div>
 				</article>
-				<div class="title"><h3> What people say about versi </h3></div>
+				<h3> What people say about versi </h3>
 				<article class="opinion">
 						<img src="images/img7.jpg">
 					<div class="right">
 						<p class="lead">Amazing. It’s easy to edit and quick to go online.</p>
-						<p> John Doe, Themeforest</p>
+						<p class="normal"> John Doe, Themeforest</p>
+					</div>
+				</article>
+				<article class="opinion">
+						<img src="images/img8.jpg">
+					<div class="right">
+						<p class="lead">Amazing. It’s easy to edit and quick to go online.</p>
+						<p class="normal"> John Doe, Themeforest</p>
+					</div>
+				</article>
+				<article class="opinion">
+						<img src="images/img9.jpg">
+					<div class="right">
+						<p class="lead">Amazing. It’s easy to edit and quick to go online.</p>
+						<p class="normal"> John Doe, Themeforest</p>
+					</div>
+				</article>
+				<article class="opinion">
+						<img src="images/img10.jpg">
+					<div class="right">
+						<p class="lead">Amazing. It’s easy to edit and quick to go online.</p>
+						<p class="normal"> John Doe, Themeforest</p>
 					</div>
 				</article>
 			</div>
 		</section>
 		<section id="portfolio">
 			<div class="wrap">
-				<h1>Services</h1>
-				<p class="lead"> We are Versi and we built our company with 15 years of experience.</p>
-				<div class="images">
-					<img src="images/img1.jpg"
+				<h1>Portfolio</h1>
+				<p class="lead">Our Featured Works and Case Studies so far</p>
+				<div class="image">
+					<img src="images/img1.jpg">
+					<div class="overlay">
+						<h3> ligula ut neque</h3>
+						<p>Branding, Illustration, Web</p>
+					</div>
 				</div>
+				<div class="image">
+					<img src="images/img2.jpg">
+					<div class="overlay">
+						<h3> ligula ut neque</h3>
+						<p>Branding, Illustration, Web</p>
+					</div>
+				</div>
+				<div class="image">
+					<img src="images/img3.jpg">
+					<div class="overlay">
+						<h3> ligula ut neque</h3>
+						<p>Branding, Illustration, Web</p>
+					</div>
+				</div>
+				<div class="image">
+					<img src="images/img4.jpg">
+					<div class="overlay">
+						<h3> ligula ut neque</h3>
+						<p>Branding, Illustration, Web</p>
+					</div>
+				</div>
+				<div class="image">
+					<img src="images/img5.jpg">
+					<div class="overlay">
+						<h3> ligula ut neque</h3>
+						<p>Branding, Illustration, Web</p>
+					</div>
+				</div>
+				<div class="image">
+					<img src="images/img6.jpg">
+					<div class="overlay">
+						<h3> ligula ut neque</h3>
+						<p>Branding, Illustration, Web</p>
+					</div>
+				</div>	
 			</div>
+		</section>
+		<section id="contact">
+			<div class="wrap">
+				<h1>Contact</h1>
+				<h2>hello@versi.com</h2>
+				<h3>+56 123-456-7890, 654-189-0987</h3>
+				<p class="lead">Envato , Level 13, 2 Elizabeth ST, Melbourne, Victoria 3000, Australia.</p>
+			<div id="map-canvas"></div>
+			<form>
+				<input type="text" name="contact-name" id="contact-name" value="Name">
+				<input type="text" name="contact-email" id="contact-email" value="E-mail">
+				<input type="text" name="contact-subject" id="contact-subject" value="Subject">
+				<textarea name="contact-message" id="contact-message"> Message</textarea>
+				<button>SEND</button>
+			</form>
+			</div>
+
 		</section>
 	</div>
 </body>

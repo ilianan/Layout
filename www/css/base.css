@@ -18,7 +18,8 @@ body > header {
 	position: fixed;
 	background: white;
 	width: 100%;
-	font-family: "Open Sans"; }
+	font-family: "Open Sans";
+	z-index: 3; }
 
 	body > header .logo {
 		display: inline;
@@ -155,7 +156,7 @@ section#about {
 */
 section#services {
 	background: mediumaquamarine;
-	height: 1200px;}
+	height: 1250px;}
 
 	#services > .wrap {
 		margin-top: 150px;
@@ -172,7 +173,8 @@ section#services {
 			margin-top: 1em;
 			font-weight: 300;}
 
-	#services .info{
+	#services .info, 
+	#services .opinion {
 		display: inline-block;
         float: left;
         overflow:hidden;
@@ -182,7 +184,7 @@ section#services {
     #services .info:nth-of-type(even) {
         margin-right: 0; }
 
-		#services .info > i {
+		#services i {
 			box-shadow: 0px 0px 0px 3px #363f48;
 			border-radius: 100%;
 			background: #363f48;
@@ -199,17 +201,28 @@ section#services {
 			padding: 10px;
             vertical-align: top;}
 
-        #services .info > .right {
+        #services .right {
             display: inline-block;
-            width:400px;
+            width:420px;
+			vertical-align: top;
             margin-left: 2em;
             margin-bottom: 2em;}
-            #services .info > .right > h3 {
+            #services .right > h3 {
             	text-transform: uppercase;
             	margin-bottom: 10px;
             	font-size: 24px;}
+        	 #services .right  p.lead, .normal  {
+        	 	margin-top: 20px;
+        	 	font-size: 18px; }
+    	 	 #services .right p.normal {
+    	 	 	color: white;
+    	 	 	font-size: 14px; }
 
-    	#services > .wrap > .title > h3 {
+		/**
+		 * WHAT OUR COSTUMERS SAY
+		*/
+    	#services > .wrap > h3 {
+    		display: block;
     		text-align: center;
     		text-transform: uppercase;
     		font-size: 24px;
@@ -220,21 +233,16 @@ section#services {
 			display: inline-block;
 	        float: left;
 	        overflow:hidden;
-	        margin-right: 4%;}
+	        margin-right: 4%;
+	        margin-top: 4em;}
 	    #services .opinion:nth-of-type(even) {
        	 	margin-right: 0; }
         #services > .wrap > .opinion >  img {
 			border-radius: 100%;
-			border: 2px solid #fff;
+			border: 3px solid #fff;
 			width: 100px;
 			height: 100px;
-			box-sizing: border-box;} 		
-		#services .opinion > .right {
-			display: inline-block;
-			margin-left: 2em;
-			margin-bottom: 2em;
-			width: 400px;} 
-		
+			box-sizing: border-box;}
 /**
  * PORTFOLIO
 */
@@ -254,3 +262,106 @@ section#portfolio {
 			margin-bottom: 3em;
 			margin-top: 1em;
 			font-weight: 300;}
+		section#portfolio > .wrap > .image{
+			margin-right: 1.5em;
+			margin-bottom: 1.5em;
+			display: inline-block;
+			width: 29%;
+			height: 245px;
+			position: relative;}
+		/**HOVER ANIMATION CSS*/
+		section#portfolio > .wrap > .image > img, .overlay{
+			position: absolute;
+			left: 0;}
+		section#portfolio > .wrap > .image > .overlay {
+			opacity: 0;}
+		section#portfolio > .wrap > .image > .overlay > h3{
+			text-transform: uppercase;
+			margin-top: 50px;}
+		section#portfolio > .wrap > .image > .overlay > p {
+			text-transform: uppercase;
+			font-size: 12px;
+			color: #555;
+			margin-top: 10px;
+		}
+		section#portfolio > .wrap > .image > .overlay:hover {
+			position: absolute;
+			display: block;
+			background: #fff;
+			transition: opacity 0.5s ease-in-out;
+			opacity: 0.8;
+			padding: 30px;
+			width: 280px;
+			height: 150px;
+			text-align: center;
+			margin: 14px;}
+/** CONTACT*/
+section#contact {
+	background: #dd3333;
+	height: 1200px;}
+	section#contact > .wrap {
+		margin-top: 150px;
+		font-family: "Open Sans";
+		color: #fff; }
+		section#contact > .wrap > h1 {
+			font-size: 3em;
+			font-weight: 700;
+			text-transform: uppercase;}
+		section#contact > .wrap > h2{
+			text-align: left;
+			font-size: 90px;
+			text-transform: lowercase;
+			font-weight: 400;
+			margin: 1.5em 0 0.5em 0;}
+		section#contact > .wrap > h3{
+			background: #fff;
+			color: #dd3333;
+			padding: 5px;
+			font-size: 60px;
+			display: inline-block;
+			font-weight: 400;}
+
+		section#contact > .wrap > p.lead{
+			font-size: 36px;
+			margin-top: 1em;
+			font-weight: 400;}
+	/**MAP*/
+	section#contact> .wrap > #map-canvas {
+        width: 620px;
+        height: 400px;
+        background: #ccc;
+        margin-top: 6em;
+        display: inline-block;}
+
+    /**FORM*/
+    section#contact> .wrap > form {
+    	display: inline-block;
+    	vertical-align: baseline;
+    	width: 470px;}
+    	section#contact> .wrap > form > input, textarea {
+    		border: 1px solid #e8e8e8;
+    		width: 91%;
+    		font-size: 13px;
+    		float: left;
+    		box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    		background: #fff;
+    		margin: 10px 0 8px 30px;
+    		padding: 15px;
+    		vertical-align: bottom;}
+		section#contact> .wrap > form > textarea {
+			height: 100px;
+			font-family: "Open Sans";
+			margin-bottom: 15px;}
+		section#contact> .wrap > form > button {
+			width: 100%;
+			background: #333;
+			color: #fff;
+			border: none;
+			margin-left: 30px;
+			padding: 15px;
+			font-weight: 400;
+			float: left;
+    		box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+    		font-size: 21px;
+		}
+
